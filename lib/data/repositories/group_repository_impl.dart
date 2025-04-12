@@ -1,7 +1,7 @@
-import '../../domain/repositories/group_repository.dart';
+// File: lib/data/repositories/group_repository_impl.dart
+
 import '../../domain/entities/group_entity.dart';
-import '../../domain/entities/leaderboard_entry_entity.dart';
-import '../../domain/entities/member_profile_entity.dart';
+import '../../domain/repositories/group_repository.dart';
 import '../services/group_service.dart';
 
 class GroupRepositoryImpl implements GroupRepository {
@@ -52,15 +52,5 @@ class GroupRepositoryImpl implements GroupRepository {
   @override
   Future<void> deleteGroup(String groupId) async {
     await _groupService.deleteGroup(groupId);
-  }
-
-  @override
-  Future<List<LeaderboardEntryEntity>> getLeaderboard(String groupId) async {
-    return await _groupService.getLeaderboard(groupId);
-  }
-
-  @override
-  Future<MemberProfileEntity> getMemberProfile(String groupId, String userId) async {
-    return await _groupService.getMemberProfile(groupId, userId);
   }
 }

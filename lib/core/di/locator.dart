@@ -61,6 +61,7 @@ Future<void> setupLocator() async {
   locator.registerLazySingleton(() => CommentService(locator()));
   locator.registerLazySingleton(() => NotificationService(locator()));
 
+
   // Repositories
   locator.registerLazySingleton<AuthRepository>(
           () => AuthRepositoryImpl(locator(), locator())
