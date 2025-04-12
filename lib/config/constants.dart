@@ -1,6 +1,6 @@
 class ApiConstants {
   // Base API URL - update this with your actual backend URL
-  static const String baseUrl = 'http://10.0.2.2:3000'; // For Android emulator
+  static const String baseUrl = 'http://192.168.100.100:3000'; // For Android emulator
   // static const String baseUrl = 'http://localhost:3000'; // For iOS simulator
 
   // API endpoints

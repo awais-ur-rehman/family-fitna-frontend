@@ -52,9 +52,6 @@ dependencies:
   get_it: ^7.6.4
   intl: ^0.18.1
   # Notifications
-  flutter_local_notifications: ^15.1.1
-  firebase_messaging: ^14.6.7
-  firebase_core: ^2.15.1
 
 dev_dependencies:
   flutter_test:
